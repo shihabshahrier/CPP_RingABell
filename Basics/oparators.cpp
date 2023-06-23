@@ -24,8 +24,14 @@ int main()
     std::cout << (a > b) << std::endl;  // greater than
     std::cout << (a < b) << std::endl;  // less than
 
+    // Logical operators
+    std::cout << (a > b && a > 100) << std::endl;  // And
+    std::cout << (a > b || a > 100) << std::endl;  // or
+    std::cout << !(a > b && a > 100) << std::endl; // not
+
     // Bitwise Operators
-    std::cout << "A & B : " << (a & b) << std::endl; // And
+    std::cout
+        << "A & B : " << (a & b) << std::endl;       // And
     std::cout << "A | B : " << (a | b) << std::endl; // OR
     std::cout << "A^B : " << (a ^ b) << std::endl;   // XOR
     std::cout << "Leftshift 1 : " << (a << 1) << std::endl;
